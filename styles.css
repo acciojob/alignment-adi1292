@@ -1,48 +1,76 @@
 /*  your css code here. If applicable */
- body {
-            font-family: Arial, sans-serif;
-            width: 1000px;
-            margin: 2px auto;
-        }
 
-        h1 {
-            text-align: center;
-        }
+body {
+  font-family: Arial, sans-serif;
+  width: 980px;       
+  margin: 18px auto;
+  background: #ffffff;
+}
 
-        table {
-            border: 1px solid black;
-            border-collapse: collapse;
-            margin: 20px auto;
-            width: 80%;
-        }
 
-        td {
-            border: 1px solid black;
-            padding: 8px;
-        }
+h1 {
+  text-align: center;
+  margin: 6px 0 14px 0;
+  font-weight: 700;
+}
 
-        .middle {
-            text-align: left;
-        }
+table {
+  border-collapse;
+  border: 1px solid #111;
+  margin: 18px auto;
+}
 
-        .center {
-            text-align: center;
-        }
 
-        .right {
-            text-align: right;
-        }
+.table-fixed {
+  width: 960px; 
+}
 
-        .green {
-            background-color: green;
-        }
+td {
+  border: 1px solid #111;
+  padding: 6px;
+  vertical-align: middle;
+}
 
-        .blue {
-            background-color: blue;
-        }
 
-        #t-image img {
-            width: 400px;
-            display: block;
-            margin: 0 auto;
-        }
+.spacer { height: 18px; }
+
+.middle { text-align: left; }   
+.center { text-align: center; }
+.right  { text-align: right; }
+
+#table-2 .t2-left,
+#table-2 .t2-right {
+  width: 140px;   
+  background: transparent;
+}
+
+#table-1 td:nth-child(1) { width: 33%; }
+#table-1 td:nth-child(2) { width: 34%; }
+#table-1 td:nth-child(3) { width: 33%; }
+
+#table-3 .color-row {
+  height: 18px;          
+  padding: 0;
+}
+
+.green td { background-color: #0c7d17; }  
+.blue  td { background-color: #0839d6; }   
+
+#table-3 .side-cell { width: 260px; background: #fff; }
+
+
+#table-3 .image-cell {
+  width: 440px;
+  text-align: center;
+  padding: 12px 6px;
+  background: #fff;
+}
+
+
+#t-image img {
+  width: 240px;       
+  height: 200px;      
+  object-fit: cover;
+  display: inline-block;
+  border: 1px solid #999;
+}
